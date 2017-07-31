@@ -1,4 +1,4 @@
-var callcodes = ["VRX", "F9", "UAL", "BA"];
+var callcodes = ["VRX", "F9", "UAL", "BA", "DAL"];
 var ways = [];
 var planes = [];
 var nodes = [];

@@ -1,5 +1,5 @@
 function Plane(x, y, s, p) {
-	this.callsign = callcodes[Math.floor(Math.random(0, 4))] + Math.floor(Math.random(1, 9999));
+	this.callsign = callcodes[Math.floor(Math.random(0, 5))] + Math.floor(Math.random(1, 9999));
 	this.state = s;
 	this.x = x;
 	this.y = y;
