@@ -1,0 +1,29 @@
+a {
+	color: white;
+	text-decoration: underline;
+	text-decoration-color: white;
+}
+body {
+	background-color: grey;
+	color: white;
+}
+header {
+	background-color: blue;
+	position: absolute;
+	top: 0;
+	height: 100px;
+	text-align: center;
+	width: 100%;
+}
+.input {
+	position: absolute;
+	left: 25%;
+	top: 50%;
+	transform: translate(-50%, 50%);
+}
+.radio {
+	position: absolute;
+	left: 75%;
+	top: 50%;
+	transform: translate(-50%, 50%);
+}

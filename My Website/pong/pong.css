@@ -1,0 +1,61 @@
+p {
+	z-index: 10;
+	position: absolute;
+	padding: 0;
+	color: white;
+	font-size: 40px;
+}
+#po {
+	left: 310px;
+	top: 110px;
+}
+#pt {
+	right: 310px;
+	top: 110px;
+}
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	background-color: grey;
+	color: white;
+	align-items: center;
+	justify-content: center;
+}
+.header {
+	background-color: blue;
+	position: absolute;
+	padding: 0;
+	top: 0;
+	text-align: center;
+	height: 100px;
+	color: white;
+	width: 100%;
+}
+#defaultCanvas0 {
+	left: 50%;
+	top: 110px;
+	position: absolute;
+	transform: translate(-50%);
+}
+a {
+	text-decoration: underline;
+	text-decoration-color: white;
+	color: white;
+	text-align: center;
+}
+#reset {
+	position: absolute;
+	bottom: 25px;
+	font-size: 20px;
+}
+#settings {
+	position: absolute;
+	left: 10px;
+	top: 50%; 
+	text-align: center;
+}
+input, button {
+	margin-top: 5px;
+
+}

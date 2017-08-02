@@ -1,0 +1,43 @@
+header {
+	color: white;
+	text-align: center;
+	font-size: 36px;
+	background-color: blue;
+	padding: 50px;
+}
+body {
+	background-color: grey;
+}
+footer {
+	background-color: black;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+ul {
+	background-color: white;
+	color: black;
+	position: absolute;
+	padding: 5px;
+	font-size: 20px;
+	text-align: center;
+}
+#games {
+	left: 33%;
+	transform: translate(-50%);
+}
+#other {
+	left: 66%;
+	transform: translate(-50%);
+}
+.titles {
+	font-size: 26px;
+}
+a {
+	text-decoration-color: black;
+	color: black;
+	display: block;
+	padding-bottom: 10px; 
+}

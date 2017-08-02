@@ -1,0 +1,22 @@
+.header {
+	background-color: blue;
+	position: absolute;
+	padding: 0;
+	top: 0;
+	text-align: center;
+	height: 100px;
+	color: white;
+	width: 100%;
+}
+body {
+	display: flex;
+	margin: 0;
+	background-color: grey;
+	color: white;
+	justify-content: center;
+	align-items: center;
+}
+a {
+	text-decoration-color: white;
+	color: white;
+}
