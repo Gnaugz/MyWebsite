@@ -20,3 +20,30 @@ a {
 	text-decoration-color: white;
 	color: white;
 }
+footer {
+	background: linear-gradient(grey, #4d4d4d);
+	padding-bottom: 10px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+.xwin {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	text-align: center;
+	color: black;
+}
+.owin {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	text-align: center;
+	color: black;
+}

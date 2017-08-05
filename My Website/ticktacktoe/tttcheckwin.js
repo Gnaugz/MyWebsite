@@ -13,7 +13,7 @@ function checkwin(i, j) {
         checkrb(i, j);
     } else if (i == 2 && j!=0 && j!=2) {
         checkr(i, j);
-    } else if (i == 2 && j == 0) {s
+    } else if (i == 2 && j == 0) {
         checkrt(i);
     } else {
         checkn(i, j);
@@ -21,46 +21,46 @@ function checkwin(i, j) {
 }
 
 function checkt(i) {
-    if (grid[0][0].p == grid[2][0].p && grid[1][0].p == grid[2][0].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}} 
-    if (grid[1][1].p == grid[1][2].p && grid[1][0].p == grid[1][2].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
+    if (grid[0][0].p == grid[2][0].p && grid[1][0].p == grid[2][0].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}} 
+    if (grid[1][1].p == grid[1][2].p && grid[1][0].p == grid[1][2].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
 }
 function checklt() {
-    if (grid[0][1].p == grid[0][2].p && grid[0][0].p == grid[0][2].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
-    if (grid[1][0].p == grid[2][0].p && grid[0][0].p == grid[2][0].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
-    if (grid[1][1].p == grid[2][2].p && grid[0][0].p == grid[2][2].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
+    if (grid[0][1].p == grid[0][2].p && grid[0][0].p == grid[0][2].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
+    if (grid[1][0].p == grid[2][0].p && grid[0][0].p == grid[2][0].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
+    if (grid[1][1].p == grid[2][2].p && grid[0][0].p == grid[2][2].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
 }
 function checkl(j) {
-    if (grid[1][1].p == grid[2][1].p && grid[0][1].p == grid[2][1].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
-    if (grid[0][0].p == grid[0][2].p && grid[0][1].p == grid[0][2].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
+    if (grid[1][1].p == grid[2][1].p && grid[0][1].p == grid[2][1].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
+    if (grid[0][0].p == grid[0][2].p && grid[0][1].p == grid[0][2].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
 }
 function checklb(j) {
-    if (grid[0][0].p == grid[0][1].p && grid[0][2].p == grid[0][1].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
-    if (grid[1][2].p == grid[2][2].p && grid[0][2].p == grid[2][2].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
-    if (grid[1][1].p == grid[2][0].p && grid[0][2].p == grid[2][0].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
+    if (grid[0][0].p == grid[0][1].p && grid[0][2].p == grid[0][1].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
+    if (grid[1][2].p == grid[2][2].p && grid[0][2].p == grid[2][2].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
+    if (grid[1][1].p == grid[2][0].p && grid[0][2].p == grid[2][0].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
 }
 function checkb(i, j) {
-    if (grid[0][2].p == grid[2][2].p && grid[1][2].p == grid[2][2].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
-    if (grid[1][0].p == grid[1][1].p && grid[1][2].p == grid[1][1].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
+    if (grid[0][2].p == grid[2][2].p && grid[1][2].p == grid[2][2].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
+    if (grid[1][0].p == grid[1][1].p && grid[1][2].p == grid[1][1].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
 }
 function checkrb(i, j) {
-    if (grid[2][1].p == grid[2][0].p && grid[2][2].p == grid[2][0].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
-    if (grid[0][2].p == grid[1][2].p && grid[2][2].p == grid[1][2].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
-    if (grid[2][1].p == grid[0][0].p && grid[2][2].p == grid[0][0].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
+    if (grid[2][1].p == grid[2][0].p && grid[2][2].p == grid[2][0].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
+    if (grid[0][2].p == grid[1][2].p && grid[2][2].p == grid[1][2].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
+    if (grid[2][1].p == grid[0][0].p && grid[2][2].p == grid[0][0].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
 }
 function checkr(i, j) {
-    if (grid[2][0].p == grid[2][2].p && grid[2][1].p == grid[2][2].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
-    if (grid[0][1].p == grid[1][1].p && grid[2][1].p == grid[1][1].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
+    if (grid[2][0].p == grid[2][2].p && grid[2][1].p == grid[2][2].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
+    if (grid[0][1].p == grid[1][1].p && grid[2][1].p == grid[1][1].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
 }
 function checkrt(i) {
-    if (grid[2][1].p == grid[2][2].p && grid[2][0].p == grid[2][2].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
-    if (grid[1][0].p == grid[0][0].p && grid[2][0].p == grid[0][0].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
-    if (grid[1][1].p == grid[0][2].p && grid[2][0].p == grid[0][2].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
+    if (grid[2][1].p == grid[2][2].p && grid[2][0].p == grid[2][2].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
+    if (grid[1][0].p == grid[0][0].p && grid[2][0].p == grid[0][0].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
+    if (grid[1][1].p == grid[0][2].p && grid[2][0].p == grid[0][2].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
 }
 function checkn(i, j) {
-    if (grid[1][0].p == grid[1][2].p && grid[1][1].p == grid[1][2].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
-    if (grid[0][1].p == grid[2][1].p && grid[1][1].p == grid[2][1].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
-    if (grid[0][0].p == grid[2][2].p && grid[1][1].p == grid[2][2].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
-    if (grid[0][2].p == grid[2][0].p && grid[1][1].p == grid[2][0].p) {if (!reseted) {if (p == 0) {alert("X's Win");} else if (p == 1) {alert("O's Win"); p = 3;} reset();}}
+    if (grid[1][0].p == grid[1][2].p && grid[1][1].p == grid[1][2].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
+    if (grid[0][1].p == grid[2][1].p && grid[1][1].p == grid[2][1].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
+    if (grid[0][0].p == grid[2][2].p && grid[1][1].p == grid[2][2].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
+    if (grid[0][2].p == grid[2][0].p && grid[1][1].p == grid[2][0].p) {if (!reseted) {if (p == 0) {showWin(p);} else if (p == 1) {showWin(p); p = 3;} reset();}}
 }
 function checktie() {
     unclicked = 0;
@@ -72,5 +72,13 @@ function checktie() {
     if (unclicked == 0) {
         alert("Draw");
         reset();
+    }
+}
+
+function showWin(p) {
+    if (p=0) {
+        document.getElementById('xwin').style.display = "block";
+    } else {
+        document.getElementById('owin').style.display = "block";
     }
 }

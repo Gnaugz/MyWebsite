@@ -11,8 +11,8 @@ Cell.prototype.show = function() {
 	noFill();
 	rect(this.x, this.y, this.w, this.w);
 	if (this.p == 0) {
-		noStroke();
-		fill(0, 0, 255);
+		stroke(0, 0, 255);
+		strokeWeight(7);
 		ellipse(this.x+this.w*0.5, this.y+this.w*0.5, this.w*0.5);
 	}
 	if (this.p == 1) {

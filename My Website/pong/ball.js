@@ -1,11 +1,7 @@
 function Ball() {
 	this.x = 500;
 	this.y = 250;
-	if (document.getElementById("speed").value!="") {
-		this.speed = document.getElementById("speed").value;
-	} else {
-		this.speed = 2;
-	}
+	this.speed = 2;
 	this.angle = Math.random()*360;
 	this.xspeed = Math.cos(this.angle)*this.speed;
 	this.yspeed = Math.sin(this.angle)*this.speed;

@@ -9,28 +9,13 @@ body {
 	background-color: grey;
 }
 footer {
-	background-color: black;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	background: linear-gradient(grey, #4d4d4d);
+	padding-bottom: 10px;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-}
-ul {
-	background-color: white;
-	color: black;
-	position: absolute;
-	padding: 5px;
-	font-size: 20px;
+	color: white;
 	text-align: center;
-}
-#games {
-	left: 33%;
-	transform: translate(-50%);
-}
-#other {
-	left: 66%;
-	transform: translate(-50%);
 }
 .titles {
 	font-size: 26px;
@@ -40,4 +25,46 @@ a {
 	color: black;
 	display: block;
 	padding-bottom: 10px; 
+}
+.dropbtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	text-align: center;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
 }
