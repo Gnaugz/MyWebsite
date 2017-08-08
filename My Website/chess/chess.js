@@ -20,6 +20,8 @@ function setup() {
         }   
     }
 }
+var pawn = new Pawn(1, 1, true);
+
 
 function mousePressed() {
     for (var i = 0; i < cols; i++) {
@@ -38,4 +40,5 @@ function draw() {
             grid[i][j].show();
         }   
     }
+    pawn.update();
 }

@@ -17,7 +17,9 @@ function Plane(x, y, s, p) {
 }
 
 Plane.prototype.update = function() {
-	if (nodes[6].x - this.x < 5) {
+	for (var i = 0; i < nodes.length; i++) {
+	 	if (nodes[i]!=);
+	 (nodes[6].x - this.x < 5) 
 		console.log("hey");
 	}
 	if (this.moves.length!=0) {
